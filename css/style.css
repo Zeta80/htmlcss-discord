@@ -46,7 +46,7 @@ header {
     justify-content: center;
 }
 
-ul {
+header ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
@@ -54,7 +54,7 @@ ul {
     font-size: 0.9rem;
 }
 
-.header,
+header,
 li {
     padding: 0 15px;
 }
@@ -122,7 +122,7 @@ main .container {
 }
 
 .grey {
-    background-color: lightgray;
+    background-color: #f6f6f6;
 }
 
 .flex {
@@ -205,42 +205,113 @@ main .container {
     height: 400px;
 }
 
+.donwloading-mac {
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+
+.donwloading-mac h3 {
+    background-image: url(../img/img/stars.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-size: 2rem;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
 
 /* #endregion MAIN */
 
 /* #region FOOTER */
 footer {
-    background-color: black;
+    background-color: #23272a;
+    color: white;
 }
 
 .section-footer {
-
-    /* DEBUG */
-    background-color: aquamarine;
     min-height: 250px;
-    border: 1px solid white;
     flex-grow: 1;
+    /* DEBUG */
+    /* border: 1px solid white; */
+    /* background-color: aquamarine; */
 }
 
 .section-footer.main {
-
-    /* DEBUG */
-    background-color: palevioletred;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
     flex-grow: 2;
+    padding: 2em;
+    /* DEBUG */
+    /* background-color: palevioletred; */
+}
+
+.section-footer h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+}
+
+footer ul {
+    list-style-type: none;
+    align-items: center;
+    font-size: 0.9rem;
+    padding-top: 2em;
+}
+
+footer li {
+    padding-bottom: 1em;
+}
+
+.titol-list {
+    color: #7289da;
 }
 
 .footer-bottom {
-    border-top: 1px solid white;
+    border-top: 1px solid #7289da;
+    padding-bottom: 2em;
+    padding-top: 1em;
+
 }
 
 .footer-button {
-    background-color: aquamarine;
     height: 30px;
     margin-top: 10px;
     justify-content: space-between;
+    /* background-color: aquamarine; */
 }
 
+/* ICONS and BUTTON*/
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
+.bttn-blu {
+    background-color: #7289da;
+    color: white;
+}
+
+.bttn-black {
+    background-color: #23272a;
+    color: white;
+}
+
+.section-footer img {
+    height: 20px;
+}
+
+/* .section-footer span::before {
+    display: inline-block;
+    height: 10px;
+    content: url(../img/img/ita.png);
+    transform: scale(.5);
+} */
+
+.icons {
+    padding-top: 1em;
+}
 
 
 /* #endregion FOOTER */
