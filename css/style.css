@@ -37,8 +37,7 @@ header {
     /* background-color: blueviolet; */
 }
 
-.logo,
-img {
+.logo img {
     width: 90px;
 }
 
@@ -85,6 +84,14 @@ li {
 .header-description h1,
 .header-description p {
     margin-bottom: 15px;
+}
+
+.header-description h1 {
+    font-size: 3rem;
+}
+
+.header-description p {
+    font-size: 1.2rem;
 }
 
 .head-bot {
@@ -176,20 +183,26 @@ main .container {
 }
 
 .descriptipn-end {
-    /* DEBUG */
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
     text-align: center;
+    /* DEBUG */
+    /* background-color: green; */
     /* height: 250px; */
-    width: 100%;
-
+    /* width: 100%; */
 }
 
-.image-end {
+/* .image-end {
     height: 400px;
     background-image: url(../img/img/item4-big.svg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
+} */
+.image-end img {
+    height: 400px;
 }
 
 
