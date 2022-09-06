@@ -16,23 +16,48 @@ html {
     display: flex;
     align-items: center;
     /* DEBUG */
-    border: 1px solid black;
-    background-color: aqua;
+    /* border: 1px solid black; */
+    /* background-color: aqua; */
 }
 
 .container {
-    width: 70%;
+    width: 50%;
     margin: auto;
 
     /* DEBUG */
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 header {
-    height: 300px;
+    background-image: url("../img/img/jumbo.png");
+    background-size: cover;
+    color: white;
     /* DEBUG */
-    background-color: blueviolet;
+    height: 400px;
+    /* background-color: blueviolet; */
+}
 
+.logo,
+img {
+    width: 90px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.header,
+li {
+    padding: 0 15px;
 }
 
 .nav,
@@ -51,14 +76,19 @@ header {
 .header-description {
     width: 50%;
     margin: auto;
-
+    text-align: center;
     /* DEBUG */
-    background-color: palevioletred;
-    height: 200px;
+    /* background-color: palevioletred; */
+    /* height: 200px; */
+}
+
+.header-description h1,
+.header-description p {
+    margin-bottom: 15px;
 }
 
 .head-bot {
-    height: 260px;
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -66,10 +96,18 @@ header {
 /* #endregion HEADER */
 
 /* #region MAIN */
-.section {
+/* .section {
     /* DEBUG */
-    height: 300px;
-    border: 1px solid black;
+/* height: 300px;
+    border: 1px solid black; */
+
+main .container {
+    padding: 20px;
+}
+
+.section {
+    margin-top: 20px;
+
 }
 
 .white {
@@ -81,7 +119,7 @@ header {
 }
 
 .flex {
-    height: 300px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,27 +128,70 @@ header {
 .img-section {
 
     flex-grow: 3;
+    min-width: 60%;
+    height: 300px;
 
     /* DEBUG */
-    background-color: blue;
-    height: 250px;
+    /* background-color: blue; */
+}
+
+.img-one {
+    background-image: url(../img/img/item1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-two {
+    background-image: url(../img/img/item2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-three {
+    background-image: url(../img/img/item3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .descriptipn-img {
     flex-grow: 2;
-
-
+    align-items: stretch;
     /* DEBUG */
-    background-color: pink;
-    height: 250px;
+    /* background-color: pink;
+    height: 250px; */
+}
+
+.descriptipn-img h2 {
+    font-size: 3rem;
+    padding-bottom: 0.8em;
+}
+
+.descriptipn-img p {
+    font-size: 1.2rem;
+}
+
+.desc-one {
+    text-align: left;
+
 }
 
 .descriptipn-end {
     /* DEBUG */
     background-color: green;
-    height: 250px;
+    text-align: center;
+    /* height: 250px; */
     width: 100%;
+
 }
+
+.image-end {
+    height: 400px;
+    background-image: url(../img/img/item4-big.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
 
 /* #endregion MAIN */
 
